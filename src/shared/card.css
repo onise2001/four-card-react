@@ -1,0 +1,62 @@
+.card {
+  padding: 28px;
+  display: flex;
+  max-width: 31.1rem;
+
+  flex-direction: column;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+
+.card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4d4f62;
+  margin-bottom: 1px;
+}
+
+.card p {
+  font-size: 1.3rem;
+  line-height: 1.77;
+  letter-spacing: 0.09px;
+  color: #4d4f62;
+  opacity: 0.5;
+  margin-bottom: 33px;
+}
+
+.card img {
+  align-self: flex-end;
+}
+
+.card::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.36rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.supervisor::before {
+  background-color: #44d3d2;
+}
+
+.team-builder::before {
+  background-color: #ea5454;
+}
+
+.karma::before {
+  background-color: #fcae4a;
+}
+
+.calculator::before {
+  background-color: #549ef2;
+}
+
+@media (min-width: 90rem) {
+  .card h2 {
+    margin-bottom: 0.6rem;
+  }
+}
